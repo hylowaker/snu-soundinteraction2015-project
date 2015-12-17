@@ -76,7 +76,7 @@ void draw() {
   currentPlayer.panel.enableInteraction(true);
   
   
-  //loopPos = millis(); // TODO
+  loopPos = millis(); // TODO
 }
 
 
@@ -212,7 +212,7 @@ void oscEvent(OscMessage theOscMessage) {
   //print(" addrpattern: "+theOscMessage.addrPattern());
   //println(" typetag: "+theOscMessage.typetag());
   //println(theOscMessage.get(0).intValue());
-  loopPos = theOscMessage.get(0).intValue();
+  //loopPos = theOscMessage.get(0).intValue();
 }
 
 
@@ -254,20 +254,37 @@ void setSample() {
     matrix2.getNoteAt(i, 0).setType(2);
   }
   
-  int[] set33 = {0,8,13,16,24,28};
+  int[] set33 = {0,12,20,28};
   for (int i: set33) {
    matrix3.getNoteAt(i, 3).setType(3);
   }
-  int[] set32 = {2,6,10,15,18,22,25,29};
+  int[] set32 = {2,10,14,22,26};
   for (int i: set32) {
    matrix3.getNoteAt(i, 2).setType(3);
   }
-  int[] set31 = {12,27,30};
+  int[] set31 = {4,8,18,24};
   for (int i: set31) {
    matrix3.getNoteAt(i, 1).setType(3);
   }
-  int[] set30 = {31};
+  int[] set30 = {6,16,30};
   for (int i: set30) {
    matrix3.getNoteAt(i, 0).setType(3);
+  }
+  
+  int[] set42 = {0,3,6};
+  int[] set41 = {8,11,14};
+  int[] set40 = {16,19,22};
+  int[] set43 = {24,27,30};
+  for (int i: set40) {
+   matrix4.getNoteAt(i, 0).setType(4);
+  }
+  for (int i: set41) {
+   matrix4.getNoteAt(i, 1).setType(4);
+  }
+  for (int i: set42) {
+   matrix4.getNoteAt(i, 2).setType(4);
+  }
+  for (int i: set43) {
+   matrix4.getNoteAt(i, 3).setType(4);
   }
 }
