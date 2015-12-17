@@ -83,6 +83,10 @@ protected class NotePanel {
     
   }
   
+  public Note getNoteAt(int timing, int pitch) {
+    return matrix[timing + pitch*cellCount];
+  }
+  
   public void changeRecType(int type) {
     recType = type;
   }

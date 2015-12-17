@@ -6,10 +6,11 @@ public class MenuInterface {
     textAlign(CENTER, CENTER);
     textSize(32);
     fill(150, 150, 150, 100);
-    text("F", 60 - 40, 160 + 0*80); 
-    text("D", 60 - 40, 160 + 1*80);
-    text("S", 60 - 40, 160 + 2*80); 
-    text("A", 60 - 40, 160 + 3*80); 
+    //String, BASEPOS_X - GAP_X, BASEPOS_Y + i*GAP_Y
+    text("F", 140 - 40, 240 + 0*60); 
+    text("D", 140 - 40, 240 + 1*60);
+    text("S", 140 - 40, 240 + 2*60); 
+    text("A", 140 - 40, 240 + 3*60); 
   }
   
   public void drawKitNumber() {
@@ -31,6 +32,17 @@ public class MenuInterface {
     fill(200, 200, 200, 80);
     if (currentKit == 4) fill(255, 255, 255);
     text("4", width/2 + 450, 600); 
+    
+  }
+  
+  public void drawElse() {
+    fill(200, 200, 200, 80);
+    textSize(25);
+    text("Press Backspace to return to main.", width/2, 0.9*height);
+    
+    fill(200, 200, 200, 140);
+    textSize(28);
+    text("[SAMPLE]", 0.8*width, 0.9*height);
   }
 
 }

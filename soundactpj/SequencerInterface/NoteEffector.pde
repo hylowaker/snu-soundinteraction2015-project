@@ -49,10 +49,11 @@ protected class Note {
 
 
 public class NoteEffector {
-  private final int BASEPOS_X = 60;
-  private final int BASEPOS_Y = 160;
+  //private final int BASEPOS_X = 60;
+  private final int BASEPOS_X = (width-1328)/2 + 15;
+  private final int BASEPOS_Y = 240;
   private final int GAP_X = 40;
-  private final int GAP_Y = 80;
+  private final int GAP_Y = 60;
   private final int GAP_XCHUNK = 6;
   
   private Note note;
@@ -134,12 +135,17 @@ public class NoteEffector {
       } else {
         c = color(255, 255, 255);
       }
-      int a = 255 - 14*fxFramesPassed;
-      stroke(c, a);
-      strokeWeight(4);
-      noFill();
-      int d = 5*fxFramesPassed;
-      ellipse(xPos, yPos, d, d);
+      //int a = 255 - 14*fxFramesPassed;
+      //stroke(c, a);
+      //strokeWeight(4);
+      //noFill();
+      //int d = 5*fxFramesPassed;
+      //ellipse(xPos, yPos, d, d);
+      int a = 190 - 16*fxFramesPassed;
+      float d = 1 + 0.06*fxFramesPassed;
+      noStroke();
+      fill(c, a);
+      rect(xPos, yPos, (GAP_X - 2)*d, (GAP_Y - 2)*d, 4*d);
     }
   }
   

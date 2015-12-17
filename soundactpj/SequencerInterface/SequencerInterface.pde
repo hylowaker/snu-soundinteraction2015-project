@@ -13,11 +13,13 @@ MatrixPlayer matrixScreen1, matrixScreen2, matrixScreen3, matrixScreen4;
 MatrixPlayer currentPlayer;
 MenuInterface menuInterface = new MenuInterface();
 
-public int loopPos;
+int loopPos;
+boolean viewOnMain = true;
 
 
 void setup() {
-  size(1400, 720);
+  //size(1600, 900);
+  fullScreen();
   
   matrixScreen1 = new MatrixPlayer(matrix1 = new NotePanel(32));
   matrixScreen2 = new MatrixPlayer(matrix2 = new NotePanel(32));
@@ -34,11 +36,8 @@ void setup() {
   matrix4.setRecType(4);
   
   currentPlayer = matrixScreen1;
-  //currentMatrix = matrix1;
   currentPlayer.panel.enableInteraction(true);
 
-
-  //myServer = new Server(this, 12000);
   oscP5 = new OscP5(this, 8001);
   myRemoteLocation = new NetAddress("127.0.0.1", 8002);
 }
@@ -47,8 +46,23 @@ void setup() {
 void draw() {
   background(40);
   
+  if (viewOnMain) {
+    textAlign(CENTER, CENTER);
+    textSize(40);
+    fill(190, 190, 190, 220);
+    text("--Introduction--", width/2, height/2 - 100);
+    text("Press A, S, D, F key or click on a cell to fill the sequencer", width/2, height/2 - 50);
+    text("Press 1, 2, 3, 4 key to change the instrument", width/2, height/2);
+    text("Press R key to reset the sequencer", width/2, height/2 + 50);
+    text("Left click to continue...", width/2, height/2 + 150);
+    return;
+  }
+  
+  
   menuInterface.drawAsdf();
   menuInterface.drawKitNumber();
+  menuInterface.drawElse();
+  
 
   matrixScreen1.run();
   matrixScreen2.run();
@@ -67,6 +81,13 @@ void draw() {
 
 
 void keyPressed() {
+  if (viewOnMain) {
+    viewOnMain = false;
+    sendStartOsc();
+    println("debug yo");
+    return;
+  }
+  
   if (key == 'r' || key == 'R') {
     currentPlayer.panel.reset();
   }
@@ -100,12 +121,25 @@ void keyPressed() {
   if (key == ' ') {
     sendStartOsc();
   }
+  
+  if (keyCode == BACKSPACE) {
+    sendStopOsc();
+    viewOnMain = true;
+    for(NotePanel matrix: matrices) {
+      matrix.reset();
+    }  
+  }
 }
 
 
 void mousePressed() {
+  if (viewOnMain) {
+    viewOnMain = false;
+    sendStartOsc();
+    return;
+  }
+
   currentPlayer.whenMousePressedDo();
-  
   
   // change currentPlayer by mouse
   if (width/2 - 450 - 70 < mouseX && mouseX < width/2 - 450 + 70 &&
@@ -129,6 +163,12 @@ void mousePressed() {
         menuInterface.currentKit = 4;
   }
   
+  // view SAMPLE
+  if (0.8*width - 80 < mouseX && mouseX < 0.8*width + 80 &&
+  0.9*height - 80 < mouseY && mouseY < 0.9*height + 80) {
+        setSample();
+  }
+  
 }
 
 
@@ -149,16 +189,19 @@ void sendNoteOsc(int instrumentType, int index) {
 
 
 void sendStartOsc() {
-  /* create an osc bundle */
   OscBundle myBundle = new OscBundle();
-
-  /* createa new osc message object */
   OscMessage myMessage = new OscMessage("/start");
   myMessage.add(1);
   myBundle.add(myMessage);
-  
-  //myBundle.setTimetag(myBundle.now() + 10000);
-  /* send the osc bundle, containing 2 osc messages, to a remote location. */
+  oscP5.send(myBundle, myRemoteLocation);
+}
+
+
+void sendStopOsc() {
+  OscBundle myBundle = new OscBundle();
+  OscMessage myMessage = new OscMessage("/stop");
+  myMessage.add(1);
+  myBundle.add(myMessage);
   oscP5.send(myBundle, myRemoteLocation);
 }
 
@@ -170,4 +213,61 @@ void oscEvent(OscMessage theOscMessage) {
   //println(" typetag: "+theOscMessage.typetag());
   //println(theOscMessage.get(0).intValue());
   loopPos = theOscMessage.get(0).intValue();
+}
+
+
+void setSample() {
+  for(NotePanel matrix: matrices) {
+    matrix.reset();
+  }
+  int[] set13 = {0,8,16,24};
+  for (int i: set13) {
+    matrix1.getNoteAt(i, 3).setType(1);
+  }
+  int[] set12 = {4,12,20,28};
+  for (int i: set12) {
+    matrix1.getNoteAt(i, 2).setType(1);
+  }
+  int[] set11 = {0,2,4,6,7,9,11,13,14,16,17,19,22,24,26,27,29,30};
+  for (int i: set11) {
+    matrix1.getNoteAt(i, 1).setType(1);
+  }
+  int[] set10 = {3,6,10,18,22,25,28};
+  for (int i: set10) {
+    matrix1.getNoteAt(i, 0).setType(1);
+  }
+  
+  int[] set23 = {0,3,6};
+  for (int i: set23) {
+    matrix2.getNoteAt(i, 3).setType(2);
+  }
+  int[] set22 = {8,11,14};
+  for (int i: set22) {
+    matrix2.getNoteAt(i, 2).setType(2);
+  }
+  int[] set21 = {24,27,30};
+  for (int i: set21) {
+    matrix2.getNoteAt(i, 1).setType(2);
+  }
+  int[] set20 = {16,19,22};
+  for (int i: set20) {
+    matrix2.getNoteAt(i, 0).setType(2);
+  }
+  
+  int[] set33 = {0,8,13,16,24,28};
+  for (int i: set33) {
+   matrix3.getNoteAt(i, 3).setType(3);
+  }
+  int[] set32 = {2,6,10,15,18,22,25,29};
+  for (int i: set32) {
+   matrix3.getNoteAt(i, 2).setType(3);
+  }
+  int[] set31 = {12,27,30};
+  for (int i: set31) {
+   matrix3.getNoteAt(i, 1).setType(3);
+  }
+  int[] set30 = {31};
+  for (int i: set30) {
+   matrix3.getNoteAt(i, 0).setType(3);
+  }
 }
