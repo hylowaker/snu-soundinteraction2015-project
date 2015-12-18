@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 42.0, 82.0, 1114.0, 740.0 ],
+		"rect" : [ 42.0, 85.0, 1114.0, 740.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -61,7 +61,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1625.0, 762.0, 271.0, 114.0 ],
+						"rect" : [ 1625.0, 229.0, 271.0, 114.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -955,7 +955,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u306005463"
+									"varname" : "u269001111"
 								}
 
 							}
@@ -2028,28 +2028,6 @@
 					"enablehscroll" : 0,
 					"enablevscroll" : 0,
 					"extract" : 1,
-					"id" : "obj-282",
-					"lockeddragscroll" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bp.Phase Vocoder.maxpat",
-					"numinlets" : 4,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "" ],
-					"patching_rect" : [ 959.0, 1502.0, 279.0, 214.0 ],
-					"varname" : "bp.Phase Vocoder",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"extract" : 1,
 					"id" : "obj-49",
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
@@ -2758,7 +2736,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-filter-Q",
-					"varname" : "u458004767"
+					"varname" : "u440000656"
 				}
 
 			}
@@ -2779,7 +2757,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-glide-time",
-					"varname" : "u760004769"
+					"varname" : "u170000658"
 				}
 
 			}
@@ -2800,7 +2778,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-even-odd",
-					"varname" : "u030004771"
+					"varname" : "u607000660"
 				}
 
 			}
@@ -2881,7 +2859,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-release",
-					"varname" : "u165004778"
+					"varname" : "u373000667"
 				}
 
 			}
@@ -2902,7 +2880,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-sustain",
-					"varname" : "u796004780"
+					"varname" : "u249000669"
 				}
 
 			}
@@ -2923,7 +2901,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-decay",
-					"varname" : "u924004782"
+					"varname" : "u712000671"
 				}
 
 			}
@@ -2944,7 +2922,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-attack",
-					"varname" : "u035004784"
+					"varname" : "u116000673"
 				}
 
 			}
@@ -2965,7 +2943,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-wobble-freq",
-					"varname" : "u901004786"
+					"varname" : "u328000675"
 				}
 
 			}
@@ -2986,7 +2964,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-wobble-depth",
-					"varname" : "u802004788"
+					"varname" : "u048000677"
 				}
 
 			}
@@ -3007,7 +2985,7 @@
 ,
 					"style" : "",
 					"text" : "pattr @bindto #0-filter-cutoff",
-					"varname" : "u292004790"
+					"varname" : "u289000679"
 				}
 
 			}
@@ -3869,7 +3847,7 @@
 ,
 					"style" : "",
 					"text" : "pattr",
-					"varname" : "u036004837"
+					"varname" : "u788000726"
 				}
 
 			}
@@ -5223,7 +5201,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1016.0, 677.0, 271.0, 114.0 ],
+						"rect" : [ 1016.0, 144.0, 271.0, 114.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -6117,7 +6095,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u156005205"
+									"varname" : "u361001096"
 								}
 
 							}
@@ -7290,7 +7268,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1140.0, -68.0, 271.0, 114.0 ],
+						"rect" : [ 1140.0, -601.0, 271.0, 114.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -8184,7 +8162,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u816005204"
+									"varname" : "u643001095"
 								}
 
 							}
@@ -9229,7 +9207,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 181.0, 541.0, 271.0, 114.0 ],
+						"rect" : [ 181.0, 8.0, 271.0, 114.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -10123,7 +10101,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u797005203"
+									"varname" : "u093001094"
 								}
 
 							}
@@ -11166,7 +11144,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 181.0, -64.0, 271.0, 114.0 ],
+						"rect" : [ 181.0, -597.0, 271.0, 114.0 ],
 						"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -12060,7 +12038,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u396005202"
+									"varname" : "u047001093"
 								}
 
 							}
@@ -15996,64 +15974,57 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-8::obj-1" : [ "Time[2]", "Time", 0 ],
-			"obj-31::obj-1" : [ "Time[4]", "Time", 0 ],
-			"obj-270" : [ "dial[10]", "dial", 0 ],
-			"obj-228" : [ "dial[3]", "dial", 0 ],
-			"obj-338::obj-50" : [ "bypass", "bypass", 0 ],
-			"obj-338::obj-1" : [ "Size", "Size", 0 ],
-			"obj-8::obj-55" : [ "Mix[3]", "Mix", 0 ],
+			"obj-231" : [ "dial[4]", "dial", 0 ],
 			"obj-31::obj-55" : [ "Mix[5]", "Mix", 0 ],
+			"obj-49::obj-55" : [ "Bypass[1]", "Bypass", 0 ],
+			"obj-17::obj-50" : [ "bypass[4]", "bypass", 0 ],
+			"obj-219" : [ "dial[2]", "dial", 0 ],
+			"obj-17::obj-20" : [ "Diffusion[3]", "Diffusion", 0 ],
+			"obj-15::obj-26" : [ "Reflections[6]", "Reflections", 0 ],
+			"obj-49::obj-7" : [ "Q[1]", "Filter Q", 0 ],
+			"obj-217" : [ "dial[1]", "dial", 0 ],
+			"obj-17::obj-25" : [ "Cutoff[3]", "Cutoff", 0 ],
+			"obj-8::obj-50" : [ "bypass[3]", "bypass", 0 ],
+			"obj-338::obj-55" : [ "Mix", "Mix", 0 ],
+			"obj-49::obj-20" : [ "Noise[1]", "Noise Thresh", 0 ],
+			"obj-8::obj-20" : [ "Diffusion[2]", "Diffusion", 0 ],
+			"obj-228" : [ "dial[3]", "dial", 0 ],
+			"obj-8::obj-25" : [ "Cutoff[2]", "Cutoff", 0 ],
 			"obj-244" : [ "dial[8]", "dial", 0 ],
-			"obj-49::obj-7" : [ "Q[2]", "Filter Q", 0 ],
-			"obj-338::obj-25" : [ "Damping", "Damping", 0 ],
-			"obj-166" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-31::obj-26" : [ "Reflections[4]", "Reflections", 0 ],
+			"obj-339::obj-55" : [ "Mix[6]", "Mix", 0 ],
+			"obj-338::obj-26" : [ "Decay", "Decay", 0 ],
+			"obj-339::obj-20" : [ "Diffusion[7]", "Diffusion", 0 ],
+			"obj-15::obj-50" : [ "bypass[7]", "bypass", 0 ],
+			"obj-338::obj-1" : [ "Size", "Size", 0 ],
+			"obj-17::obj-1" : [ "Time[3]", "Time", 0 ],
+			"obj-15::obj-20" : [ "Diffusion[6]", "Diffusion", 0 ],
+			"obj-17::obj-55" : [ "Mix[4]", "Mix", 0 ],
+			"obj-15::obj-25" : [ "Cutoff[6]", "Cutoff", 0 ],
+			"obj-8::obj-1" : [ "Time[2]", "Time", 0 ],
+			"obj-339::obj-1" : [ "Time[7]", "Time", 0 ],
+			"obj-31::obj-50" : [ "bypass[5]", "bypass", 0 ],
+			"obj-338::obj-50" : [ "bypass", "bypass", 0 ],
+			"obj-270" : [ "dial[10]", "dial", 0 ],
+			"obj-8::obj-55" : [ "Mix[3]", "Mix", 0 ],
+			"obj-31::obj-20" : [ "Diffusion[4]", "Diffusion", 0 ],
+			"obj-151" : [ "Pitch Bend", "Pitch Bend", 0 ],
+			"obj-31::obj-25" : [ "Cutoff[4]", "Cutoff", 0 ],
+			"obj-242" : [ "dial[7]", "dial", 0 ],
+			"obj-246" : [ "dial[9]", "dial", 0 ],
 			"obj-15::obj-1" : [ "Time[6]", "Time", 0 ],
 			"obj-338::obj-20" : [ "Diffusion", "Diffusion", 0 ],
-			"obj-339::obj-20" : [ "Diffusion[7]", "Diffusion", 0 ],
-			"obj-17::obj-1" : [ "Time[3]", "Time", 0 ],
-			"obj-339::obj-25" : [ "Cutoff[7]", "Cutoff", 0 ],
-			"obj-49::obj-55" : [ "Bypass[2]", "Bypass", 0 ],
-			"obj-339::obj-26" : [ "Reflections[7]", "Reflections", 0 ],
-			"obj-8::obj-26" : [ "Reflections[2]", "Reflections", 0 ],
-			"obj-31::obj-26" : [ "Reflections[4]", "Reflections", 0 ],
-			"obj-339::obj-1" : [ "Time[7]", "Time", 0 ],
-			"obj-15::obj-25" : [ "Cutoff[6]", "Cutoff", 0 ],
-			"obj-282::obj-73" : [ "analyzing", "analyzing", 0 ],
-			"obj-339::obj-50" : [ "bypass[6]", "bypass", 0 ],
-			"obj-17::obj-50" : [ "bypass[4]", "bypass", 0 ],
-			"obj-246" : [ "dial[9]", "dial", 0 ],
-			"obj-338::obj-26" : [ "Decay", "Decay", 0 ],
-			"obj-49::obj-20" : [ "Noise[2]", "Noise Thresh", 0 ],
-			"obj-180" : [ "dial", "dial", 0 ],
-			"obj-17::obj-20" : [ "Diffusion[3]", "Diffusion", 0 ],
-			"obj-15::obj-50" : [ "bypass[7]", "bypass", 0 ],
-			"obj-15::obj-26" : [ "Reflections[6]", "Reflections", 0 ],
-			"obj-17::obj-25" : [ "Cutoff[3]", "Cutoff", 0 ],
-			"obj-282::obj-12" : [ "Mute", "Mute", 0 ],
-			"obj-8::obj-50" : [ "bypass[3]", "bypass", 0 ],
-			"obj-31::obj-50" : [ "bypass[5]", "bypass", 0 ],
-			"obj-282::obj-28" : [ "Offset", "Offset", 0 ],
-			"obj-338::obj-55" : [ "Mix", "Mix", 0 ],
-			"obj-15::obj-55" : [ "Mix[7]", "Mix", 0 ],
-			"obj-282::obj-105::obj-2" : [ "pastebang", "pastebang", 0 ],
 			"obj-17::obj-26" : [ "Reflections[3]", "Reflections", 0 ],
-			"obj-8::obj-20" : [ "Diffusion[2]", "Diffusion", 0 ],
-			"obj-31::obj-20" : [ "Diffusion[4]", "Diffusion", 0 ],
-			"obj-219" : [ "dial[2]", "dial", 0 ],
-			"obj-8::obj-25" : [ "Cutoff[2]", "Cutoff", 0 ],
-			"obj-31::obj-25" : [ "Cutoff[4]", "Cutoff", 0 ],
-			"obj-217" : [ "dial[1]", "dial", 0 ],
-			"obj-231" : [ "dial[4]", "dial", 0 ],
-			"obj-151" : [ "Pitch Bend", "Pitch Bend", 0 ],
-			"obj-282::obj-25" : [ "CV", "CV", 0 ],
-			"obj-242" : [ "dial[7]", "dial", 0 ],
-			"obj-282::obj-19" : [ "CV2", "CV2", 0 ],
-			"obj-15::obj-20" : [ "Diffusion[6]", "Diffusion", 0 ],
-			"obj-339::obj-55" : [ "Mix[6]", "Mix", 0 ],
-			"obj-17::obj-55" : [ "Mix[4]", "Mix", 0 ],
+			"obj-339::obj-50" : [ "bypass[6]", "bypass", 0 ],
+			"obj-180" : [ "dial", "dial", 0 ],
+			"obj-15::obj-55" : [ "Mix[7]", "Mix", 0 ],
 			"obj-237" : [ "dial[6]", "dial", 0 ],
-			"obj-282::obj-3" : [ "Position", "Position", 0 ]
+			"obj-166" : [ "live.gain~", "live.gain~", 0 ],
+			"obj-8::obj-26" : [ "Reflections[2]", "Reflections", 0 ],
+			"obj-339::obj-25" : [ "Cutoff[7]", "Cutoff", 0 ],
+			"obj-31::obj-1" : [ "Time[4]", "Time", 0 ],
+			"obj-339::obj-26" : [ "Reflections[7]", "Reflections", 0 ],
+			"obj-338::obj-25" : [ "Damping", "Damping", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -16083,42 +16054,6 @@
 , 			{
 				"name" : "classic-channel.maxpat",
 				"bootpath" : "C:/ProgramData/Max 7/examples/effects/classic-vocoder-folder/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.Phase Vocoder.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Oscillator",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.pvoc.pfft.maxpat",
-				"bootpath" : "C74:/packages/Beap/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.pvoc.rec.pfft.maxpat",
-				"bootpath" : "C74:/packages/Beap/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "pastebang.maxpat",
-				"bootpath" : "C74:/packages/Beap/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.arc.accum-2.maxpat",
-				"bootpath" : "C74:/packages/Beap/misc",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.arc.knob.maxpat",
-				"bootpath" : "C74:/packages/Beap/misc",
 				"type" : "JSON",
 				"implicit" : 1
 			}
